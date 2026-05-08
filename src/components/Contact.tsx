@@ -11,16 +11,9 @@ export default function Contact() {
     const subject = `Message from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
     
-    // Use mailto: protocol - works on both mobile and desktop
+    // Use mailto: protocol - works reliably on both mobile and desktop
     const mailtoLink = `mailto:patelsumit86112@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Try to open with window.open first (more reliable across browsers)
-    const opened = window.open(mailtoLink);
-    
-    // Fallback for desktop if mailto doesn't trigger properly
-    if (!opened || opened.closed) {
-      window.location.href = mailtoLink;
-    }
+    window.location.href = mailtoLink;
     
     // Clear form after opening email
     setFormData({ name: '', email: '', message: '' });
