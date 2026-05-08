@@ -173,25 +173,6 @@ public/
 │   └── meimg.jpg             # Hero section portrait
 ```
 
-## 🌐 Deployment
-
-### Deploy to Vercel (Recommended)
-```bash
-npm i -g vercel
-vercel
-```
-
-### Deploy to Netlify
-```bash
-npm run build
-# Drag & drop 'dist' folder to Netlify
-```
-
-### Deploy to GitHub Pages
-1. Update `vite.config.ts` with base URL
-2. Run `npm run build`
-3. Deploy the `dist` folder to GitHub Pages
-
 ## 🚀 Performance Optimization
 
 - **Lazy Loading** - Components load on scroll visibility
@@ -212,11 +193,6 @@ This project is open source and available under the MIT License. Feel free to us
 - Full Stack Development
 - AI/ML Integration
 
-### Connect with me:
-- **Email**: patelsumit86112@gmail.com
-- **GitHub**: [@sumit12c](https://github.com/sumit12c/)
-- **LinkedIn**: [Sumit Patel](https://www.linkedin.com/in/sumit-patel-5a8407290)
-
 ## 🙏 Credits
 
 - **Animations**: GSAP & Framer Motion
@@ -229,7 +205,6 @@ This project is open source and available under the MIT License. Feel free to us
 
 For questions or suggestions about this portfolio:
 - Open an issue on GitHub
-- Check the deployment guide
 - Contact via email: patelsumit86112@gmail.com
 
 ---
