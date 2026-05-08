@@ -3,6 +3,8 @@
 
 A premium, interactive personal portfolio website showcasing creative development expertise, innovative projects, and technical skills. Built with cutting-edge technologies featuring smooth animations, 3D backgrounds, and a seamless user experience.
 
+[![Open Site](https://img.shields.io/badge/Open%20Site-thesumitpatel.netlify.app-blue?style=for-the-badge)](https://thesumitpatel.netlify.app)
+
 ## ✨ Features
 
 - **Smooth GSAP Animations** - Professional scroll-triggered animations and transitions
