@@ -6,14 +6,21 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
 
-  // Open email with pre-filled fields (works on mobile too)
+  // Open email with pre-filled fields (works on mobile and desktop)
   const openGmail = () => {
     const subject = `Message from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
     
-    // Use mailto: protocol which works better on mobile
+    // Use mailto: protocol - works on both mobile and desktop
     const mailtoLink = `mailto:patelsumit86112@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    
+    // Try to open with window.open first (more reliable across browsers)
+    const opened = window.open(mailtoLink);
+    
+    // Fallback for desktop if mailto doesn't trigger properly
+    if (!opened || opened.closed) {
+      window.location.href = mailtoLink;
+    }
     
     // Clear form after opening email
     setFormData({ name: '', email: '', message: '' });
