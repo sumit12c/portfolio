@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 lg:w-80 lg:h-[500px] xl:w-[400px] xl:h-[600px] rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl group">
             <motion.div className="absolute inset-0 w-full h-full bg-zinc-900">
                <img 
-                 src="../../images/meimg.jpg" 
+                 src="/images/meimg.jpg" 
                  alt="Sumit Patel Portrait" 
                  className="w-full h-full object-cover object-center translate-x-0 group-hover:scale-105 transition-transform duration-[1.5s] ease-out opacity-70 mix-blend-luminosity hover:mix-blend-normal"
                />
