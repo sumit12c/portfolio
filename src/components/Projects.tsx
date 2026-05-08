@@ -8,7 +8,7 @@ const projects = [
     description: "Gamified disaster preparedness platform featuring a robust PIN-based alert system for rapid response coordination.",
     category: "Full Stack",
     accent: "bg-cyan-500 text-white",
-    img: "images/resqverse.png",
+    img: "/images/resqverse.png",
     link: "https://resqverse.onrender.com"
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description: "An intelligent AI mock interview simulator designed to help candidates practice and perfect their interview skills.",
     category: "AI / Web",
     accent: "bg-purple-500 text-white",
-    img: "images/kracit.png",
+    img: "/images/kracit.png",
     link: "https://kracit.onrender.com"
   },
   {
@@ -24,14 +24,14 @@ const projects = [
     description: "A lightning-fast, secure file sharing application facilitating seamless wireless transfer between local devices.",
     category: "Networking / Web",
     accent: "bg-orange-500 text-white",
-    img: "images/fileflick.png"
+    img: "/images/fileflick.png"
   },
   {
     title: "Portfolio Website",
     description: "This premium, interactive personal portfolio website featuring smooth GSAP-inspired animations and 3D backgrounds.",
     category: "Frontend",
     accent: "bg-white text-black",
-    img: "images/portfolio.png"
+    img: "/images/portfolio.png"
   }
 ];
 
