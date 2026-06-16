@@ -55,7 +55,7 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-cyan-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <a href="/images/Sumit_Patel_resume.pdf" download="Sumit_Patel_resume.pdf" className="ml-4 px-5 py-2 text-sm font-medium border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all rounded-full uppercase tracking-widest cursor-pointer">
+          <a href="/images/SumitPatel_Resume.pdf" download="SumitPatel_Resume.pdf" className="ml-4 px-5 py-2 text-sm font-medium border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all rounded-full uppercase tracking-widest cursor-pointer">
             Resume
           </a>
           <a href="#contact" onClick={(e) => handleSmoothScroll(e, "#contact")} className="ml-2 px-5 py-2 text-sm font-medium border border-white/20 hover:border-white hover:bg-white hover:text-black transition-all rounded-full uppercase tracking-widest cursor-pointer">
@@ -96,8 +96,8 @@ export default function Navbar() {
               </motion.a>
             ))}
             <motion.a
-              href="/images/Sumit_Patel_resume.pdf"
-              download="Sumit_Patel_resume.pdf"
+              href="/images/SumitPatel_Resume.pdf"
+              download="SumitPatel_Resume.pdf"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.1 }}
