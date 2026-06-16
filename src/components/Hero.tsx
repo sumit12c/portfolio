@@ -24,6 +24,15 @@ export default function Hero() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const handleExploreWork = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById("projects");
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -90,7 +99,7 @@ export default function Hero() {
           </div>
 
           <motion.div variants={fadeItemVariants} className="mt-12 pointer-events-auto">
-            <a href="#contact" className="relative overflow-hidden group bg-white text-black px-10 py-4 rounded-full font-medium transition-all hover:scale-105 flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+            <a href="#projects" onClick={handleExploreWork} className="relative overflow-hidden group bg-white text-black px-10 py-4 rounded-full font-medium transition-all hover:scale-105 flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.2)]">
               <span className="relative z-10 tracking-widest uppercase text-xs font-bold whitespace-nowrap">Explore My Work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
